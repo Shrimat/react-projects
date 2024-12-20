@@ -4,6 +4,8 @@ import ImageSlider from './components/image-slider';
 import LoadMoreData from './components/load-more-data';
 import RandomColour from './components/random-colour';
 import StarRating from './components/star-rating';
+import TreeView from './components/tree-view';
+import menus from './components/tree-view/data';
 
 function App(props) {
   return (
@@ -22,6 +24,9 @@ function App(props) {
 
       {/* Load More Products Component */}
       <LoadMoreData />
+
+      {/* Tree View Component */}
+      <TreeView menus={menus}/>
     </div>
   );
 }
